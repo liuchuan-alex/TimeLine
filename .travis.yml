@@ -1,0 +1,31 @@
+language: objective-c
+os: osx
+osx_image: xcode10.1
+podfile: Vting
+env:
+  global:
+    - secure: hw+odJ794FXcZvR3HZ3q1VfL054u0gw1HozTl+9XhoRSW9t0IdrHpUjhXlosjYZizzsqW+7fQoaXK+//Iv3MrJmNxd6anth0dRs8w4zHMmcSrbu96BXF51lj/RDdf+WQv7+PZY8YrXzuSLlqrCwX2ziKo++AF3zFqO32Euo++IqgJ5gAcP1FKbF8/j8pOjpqCdQ3/YnMbPgSyXDFX4dGAPSDBv3QjkNt+HibFXr+pUQvUXAJ6dSJ+ODCbgQG8bvk54wmdkZ4b4grjM+a1sqWmLirk4fLZ0ao10fohSQQYqz9GsWQmgSLI0X7FVncz/O/5Z7LA7UQghkPCP9vUwRiK4FcTOn5CX7LwzKH7eUy2EfvfNI5VjF3pv29JqTdUacz1UD2wxtaKEjMcnmEN1aSN4RGNy3GJFUGCZhHIsUw98nzpeyxgyVLXLbumTZfqd6qJl3lCTRKeU+zP9IJAC4KyHxYzkIGVRVo9BQkqnkgfWyAb+wfNvdIf6nSwY939PQTXZd42r94q4uvyCnyo5HhX1EwKi+DlxcgrSio6uIgpa/kTGT9QPYVbyqF10PjhXUVKrAzV//LsZaM2bjog//nN/Dja+cf+tbsWW96NPbx6LR9SSFaaCGd89aWGCUhk+CkiemZF9ne5aDRNBpNYyxuNnQsEBJN5RO3wKV2fIDjjB0=
+    # Deleted in favor of Dashboard settings > FASTLANE_PASSWORD
+    # - secure: amkn7TOdgx1i9v77wO9DJ3ek/PMzIM8Vz7wfS57wdNSgTUE5ALEoE0DbBfJRbwMAZydpLkmhB51XlQJ39+RJHeLn0jwMZS0TL6Blgn8KneCKW7tOVPAdKCTm9LWMd1Xx49OzsRRvLN+UxXuA02AQAO9itgYtdD6aToK78CwzQHadH3UueG3dLOs0OQfnpgg3jEABr7U9OtVL+DB3TAvZcpkyqC4f8iqI5Og4KdJzsOauJyy90VGXey8bqj9A10tSadCJPYHWU3d2GIb+hKSfY0Q70FcmnTVe1s/1CTjBjkMGOe9gDIZUFpEijtb4qlOuu/JyxNMHuJHW/vX27CAbr/WaB6bAT3BbjCSdYaOPvfnp6LFsF2nX6e4B6Ine2Z2MEO/Y0YgmdAsTDgYRsbmKpa9VP4lF1/Ffie2O+md06AG96gc+2pPSjQ47voMgOhPmUZmL5dxfUuQBeFDsoO4iHuaZo+rGslG7Oog7mk0i4LGjvC1/bHO3uWZAKHZv/poIC+VbQxfh7JS3KP0OoEeG/K3ubyvBQT++YRmwzo++0ki4njuJixaw9DLf8IVV/xuUT4+ytyzz6aq4CRftjGtQwJq92pBPmyswl6ZjafEdS8DGJA7DXR4dc6eWRpHP6kyun2Q21jH7qur1XZEO7Lx+ffi7aTTdTe3H1+zijbkKa1Y=
+before_install:
+  - openssl aes-256-cbc -K $encrypted_10a6bae72428_key -iv $encrypted_10a6bae72428_iv
+    -in ./.travis/ssh/id_rsa_vting_secret_key.enc -out ./.travis/ssh/id_rsa_vting_secret_key
+    -d
+install:
+  - cd Vting && bundle install && cd ..
+script:
+  - # eval "$(ssh-agent -s)"
+  - # chmod 600 .travis/ssh/id_rsa_vting_secret_key
+  - # ssh-add .travis/ssh/id_rsa_vting_secret_key
+  - cd Vting
+  - bundle update fastlane
+  - fastlane lane_testflight
+branches:
+  only:
+    - deploy
+    # - master
+    # - dev
+    # - /^vting-.*-dev-.*$/
+    # - /^vting-.*\.dev-.*$/
+    # - /^vting-.*-beta-.*$/
+    # - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
