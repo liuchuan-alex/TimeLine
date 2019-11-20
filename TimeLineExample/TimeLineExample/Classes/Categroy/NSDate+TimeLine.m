@@ -13,7 +13,7 @@
 + (NSString *)formateDate:(NSString *)dateString withFormate:(NSString *) formate{
     
     //实例化一个NSDateFormatter对象
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:formate];
     
     NSDate * nowDate = [NSDate date];
@@ -26,10 +26,10 @@
     
     //// 再然后，把间隔的秒数折算成天数和小时数：
     
-    NSString *dateStr = @"";
+    NSString * dateStr = @"";
     
-    if (time<=60) {  //// 1分钟以内的
-        dateStr = @"刚刚";
+    if (time<=60)  {  //// 1分钟以内的
+        dateStr =  @"刚刚";
     }else if(time<=60*60){  ////  一个小时以内的
         
         int mins = time/60;

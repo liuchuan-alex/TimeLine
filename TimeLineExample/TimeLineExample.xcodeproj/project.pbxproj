@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		164B8A2F2384C8D4008716E9 /* TestViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B8A2E2384C8D4008716E9 /* TestViewController1.m */; };
 		6B28554420B2B4AD00CAEF3D /* TimeLinePhotoContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B28554320B2B4AD00CAEF3D /* TimeLinePhotoContainerView.m */; };
 		6B427DAF20C516EF005A68D8 /* TestWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B427DAE20C516EF005A68D8 /* TestWebViewController.m */; };
 		6B427E1720C525C0005A68D8 /* YYCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B427DE320C525C0005A68D8 /* YYCGUtilities.m */; };
@@ -65,8 +64,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		164B8A2D2384C8D4008716E9 /* TestViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController1.h; sourceTree = "<group>"; };
-		164B8A2E2384C8D4008716E9 /* TestViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController1.m; sourceTree = "<group>"; };
 		2383601AB8D4A11834BED5F4 /* Pods-TimeLineExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLineExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLineExample/Pods-TimeLineExample.debug.xcconfig"; sourceTree = "<group>"; };
 		39A5647746E71811240A56AD /* Pods_TimeLineExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLineExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B28554220B2B4AD00CAEF3D /* TimeLinePhotoContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeLinePhotoContainerView.h; sourceTree = "<group>"; };
@@ -347,8 +344,6 @@
 				6BAF351320BE94AD00B90E29 /* TestViewController.xib */,
 				6B427DAD20C516EF005A68D8 /* TestWebViewController.h */,
 				6B427DAE20C516EF005A68D8 /* TestWebViewController.m */,
-				164B8A2D2384C8D4008716E9 /* TestViewController1.h */,
-				164B8A2E2384C8D4008716E9 /* TestViewController1.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -716,7 +711,6 @@
 				6B48199820B3B65100343776 /* NSDate+TimeLine.m in Sources */,
 				6B427E2420C525C0005A68D8 /* YYKVStorage.m in Sources */,
 				6B427E1820C525C0005A68D8 /* CALayer+YYAdd.m in Sources */,
-				164B8A2F2384C8D4008716E9 /* TestViewController1.m in Sources */,
 				6B427E2C20C525C0005A68D8 /* UIButton+YYWebImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
