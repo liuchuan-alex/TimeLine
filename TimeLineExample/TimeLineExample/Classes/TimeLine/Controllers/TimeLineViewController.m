@@ -3,7 +3,7 @@
 //  TimeLineExample
 //
 //  Created by 刘川 on 2018/5/18.
-//  Copyright © 2018年 Alex. All rights reserved.
+//  Copyright © 2018年 Alex.  All rights reserved.
 //
 
 #import "TimeLineViewController.h"
@@ -56,6 +56,7 @@
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     [self.view endEditing:YES];
+    
     //  需要优化
     [TimeLineMenuView dismissAllMenu];
 }

@@ -27,7 +27,7 @@ static const NSInteger kTimeLineMaxLine = 6;                                //  
 
 
 static const NSString * kImgHeader = @"http://static.soperson.com";         //  图片地址前缀
-static const BOOL kDisplaysAsynchronously = YES;                             //  YYLable异步渲染
+static const BOOL kDisplaysAsynchronously = YES;                            //  YYLable异步渲染
 
 /** 宏定义 */
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D290BE2384D2B100CE20AB /* TestViewController123.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D290BD2384D2B100CE20AB /* TestViewController123.m */; };
 		6B28554420B2B4AD00CAEF3D /* TimeLinePhotoContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B28554320B2B4AD00CAEF3D /* TimeLinePhotoContainerView.m */; };
 		6B427DAF20C516EF005A68D8 /* TestWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B427DAE20C516EF005A68D8 /* TestWebViewController.m */; };
 		6B427E1720C525C0005A68D8 /* YYCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B427DE320C525C0005A68D8 /* YYCGUtilities.m */; };
@@ -64,6 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16D290BC2384D2B100CE20AB /* TestViewController123.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController123.h; sourceTree = "<group>"; };
+		16D290BD2384D2B100CE20AB /* TestViewController123.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController123.m; sourceTree = "<group>"; };
 		2383601AB8D4A11834BED5F4 /* Pods-TimeLineExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLineExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLineExample/Pods-TimeLineExample.debug.xcconfig"; sourceTree = "<group>"; };
 		39A5647746E71811240A56AD /* Pods_TimeLineExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLineExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B28554220B2B4AD00CAEF3D /* TimeLinePhotoContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeLinePhotoContainerView.h; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 				6BAF351320BE94AD00B90E29 /* TestViewController.xib */,
 				6B427DAD20C516EF005A68D8 /* TestWebViewController.h */,
 				6B427DAE20C516EF005A68D8 /* TestWebViewController.m */,
+				16D290BC2384D2B100CE20AB /* TestViewController123.h */,
+				16D290BD2384D2B100CE20AB /* TestViewController123.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -384,8 +389,8 @@
 			children = (
 				6BDF04BB20B4029100292086 /* Base */,
 				6BDF04BC20B4029A00292086 /* TimeLine */,
-				6BDF04BD20B402B700292086 /* Libs */,
 				6BDF04BE20B402BD00292086 /* Categroy */,
+				6BDF04BD20B402B700292086 /* Libs */,
 				6BAF350F20BE946C00B90E29 /* TestVC */,
 			);
 			path = Classes;
@@ -516,12 +521,12 @@
 		6BDF04BE20B402BD00292086 /* Categroy */ = {
 			isa = PBXGroup;
 			children = (
-				6B48199620B3B65100343776 /* NSDate+TimeLine.h */,
-				6B48199720B3B65100343776 /* NSDate+TimeLine.m */,
-				6B8F98EB20C910CF0056993E /* UITextView+Placeholder.h */,
-				6B8F98EA20C910CE0056993E /* UITextView+Placeholder.m */,
 				6BAF351820BE9B1A00B90E29 /* UIView+Add.h */,
 				6BAF351920BE9B1A00B90E29 /* UIView+Add.m */,
+				6B8F98EB20C910CF0056993E /* UITextView+Placeholder.h */,
+				6B8F98EA20C910CE0056993E /* UITextView+Placeholder.m */,
+				6B48199620B3B65100343776 /* NSDate+TimeLine.h */,
+				6B48199720B3B65100343776 /* NSDate+TimeLine.m */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -676,6 +681,7 @@
 				6B8F98FA20C917E50056993E /* TimeLineAutoFitSizeTextView.m in Sources */,
 				6B427DAF20C516EF005A68D8 /* TestWebViewController.m in Sources */,
 				6B427E1720C525C0005A68D8 /* YYCGUtilities.m in Sources */,
+				16D290BE2384D2B100CE20AB /* TestViewController123.m in Sources */,
 				6B427E2220C525C0005A68D8 /* YYMemoryCache.m in Sources */,
 				6B4819A320B3C10500343776 /* TimeLineGrayLinkView.m in Sources */,
 				6B427E1920C525C0005A68D8 /* YYWebImageManager.m in Sources */,

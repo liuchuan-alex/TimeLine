@@ -287,7 +287,6 @@
         
         [self.commentLayoutArr addObject:layout];
     }
-    
     _liekCommentHeight += _commentHeight;
 }
 
