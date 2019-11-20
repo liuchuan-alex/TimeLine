@@ -20,8 +20,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     // test
     self.view.backgroundColor = [UIColor whiteColor];
-    // test
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
