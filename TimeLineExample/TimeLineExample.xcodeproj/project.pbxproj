@@ -630,21 +630,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TimeLineExample/Pods-TimeLineExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeLineExample/Pods-TimeLineExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeLineExample/Pods-TimeLineExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeLineExample/Pods-TimeLineExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeLineExample/Pods-TimeLineExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A007D109B9101781B4672485 /* [CP] Check Pods Manifest.lock */ = {
